@@ -27,7 +27,7 @@ public class Set_Matrix_Zeros {
         }
     }
     public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3}, {4, 0, 6}, {7, 8, 9}};
+        int[][] matrix = {{1, 2, 3}, {4, 0, 5}, {7, 8, 9}};
         setZeros(matrix);
         int n = matrix.length;
         int m = matrix[0].length;
