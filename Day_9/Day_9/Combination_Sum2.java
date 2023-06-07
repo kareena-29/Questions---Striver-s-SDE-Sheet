@@ -1,7 +1,8 @@
+package Day_9;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Collection_Sum2 {
+public class Combination_Sum2 {
 
     public static void findCombinations(int index, ArrayList<Integer> arr, int target,
             ArrayList<ArrayList<Integer>> ans, ArrayList<Integer> ds) {
