@@ -1,0 +1,15 @@
+package Day_18;
+
+
+public class ValidateBST {
+
+    public boolean isValidBST(TreeNode root) {
+        return isValid(root,Long.MIN_VALUE,Long.MAX_VALUE);
+    }
+// Remember to have values in long!
+    public boolean isValid(TreeNode root, long minVal, long maxVal){
+        if(root == null) return true;
+        if(root.val >= maxVal || root.val <= minVal) return false;
+        return isValid(root.left, minVal, root.val) && isValid(root.right,root.val,maxVal);
+    }
+}
